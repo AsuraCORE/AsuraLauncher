@@ -16,7 +16,7 @@ static class LaunchOptions
     public static Option<string> CdnsUrl = new("--cdnsurl");
     public static Option<string> ProductName = new("--product", () => "wow");
     public static Option<string> CdnRegion = new("--region", () => "EU");
-    public static Option<string> BgsPortal = new("--portal");
+    public static Option<string> BgsPortal = new("--portal", () => Asura.Portal);
 
     // Game command line options.
     public static Option<string> GameConfig = new("-config", () => "Config.wtf");
@@ -29,7 +29,7 @@ static class LaunchOptions
         .UseSuggestDirective()
         .Build();
 
-    public static RootCommand RootCommand = new("Burralis Game Launcher")
+    public static RootCommand RootCommand = new(Asura.Name)
     {
         Version,
         GamePath,

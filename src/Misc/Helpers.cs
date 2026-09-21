@@ -41,7 +41,7 @@ static class Helpers
     public static void PrintHeader()
     {
         Console.ForegroundColor = ConsoleColor.Green;
-        Console.WriteLine("Burralis Game Launcher");
+        Console.WriteLine(Asura.Name);
         Console.ResetColor();
         Console.Write("Game: ");
         Console.ForegroundColor = ConsoleColor.Cyan;
@@ -49,7 +49,7 @@ static class Helpers
         Console.ResetColor();
         Console.Write("Support: ");
         Console.ForegroundColor = ConsoleColor.Cyan;
-        Console.WriteLine("https://burralis.io");
+        Console.WriteLine(Asura.Website);
         Console.ResetColor();
         Console.WriteLine();
         Console.WriteLine($"Operating System: {RuntimeInformation.OSDescription}");

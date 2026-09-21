@@ -1,13 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputPath>../build/$(Configuration)/bin</OutputPath>
-    <AssemblyName>Burralis Game Launcher</AssemblyName>
+    <AssemblyName>AsuraCORE Launcher</AssemblyName>
     <ApplicationIcon>logo.ico</ApplicationIcon>
     <OutputType>Exe</OutputType>
     <TargetFramework>net10.0</TargetFramework>
     <Nullable>disable</Nullable>
     <LangVersion>preview</LangVersion>
-    <Copyright>Burralis</Copyright>
+    <Copyright>AsuraCORE, Burralis</Copyright>
     <Platforms>x64</Platforms>
     <ImplicitUsings>enable</ImplicitUsings>
     <DefineConstants>$(DefineConstants);$(Platform)</DefineConstants>

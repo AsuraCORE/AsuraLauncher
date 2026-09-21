@@ -1,4 +1,4 @@
-// Copyright (c) Burralis.
+﻿// Copyright (c) Burralis.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
 using System.CommandLine.Parsing;
@@ -131,6 +131,13 @@ static class Launcher
 
         (string IPAddress, string HostName, int Port) portal = new();
 
+
+        // A fresh client install has no Config.wtf yet.
+        if (!File.Exists(configPath))
+        {
+            Directory.CreateDirectory(Path.GetDirectoryName(configPath));
+            File.WriteAllText(configPath, string.Empty);
+        }
 
         var config = File.ReadAllText(configPath);
         var bgsPortal = commandLineResult.GetValueForOption(LaunchOptions.BgsPortal);
