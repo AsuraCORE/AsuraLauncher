@@ -9,5 +9,5 @@ static class Asura
     public const string Website = "https://github.com/AsuraCORE";
 
     // Default login portal (bnetserver host). Overridable with --portal.
-    public const string Portal = "193.124.184.192";
+    public const string Portal = "193-124-184-192.sslip.io";
 }
